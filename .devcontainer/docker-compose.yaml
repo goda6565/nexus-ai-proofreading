@@ -1,0 +1,8 @@
+services:
+  backend:
+    hostname: backend
+    build: .
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    user: vscode
+    volumes:
+      - ..:/workspace:cached
